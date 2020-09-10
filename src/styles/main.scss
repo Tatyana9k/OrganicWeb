@@ -47,14 +47,29 @@ body {
 .main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     &-text {
         flex: 0 0 40%;
+        padding-top: 190px;
         &__description {
             font-size: 1.12rem;
             line-height: 1.51;
             margin-top: 3.75rem;
             margin-bottom: 4.81rem;
+        }
+    }
+    &-visual {
+        box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($gray, $alpha);
+        border-radius: 100%;
+        padding: 53px;
+        &__image {
+            border: 1px solid rgba($gray, $alpha);
+            border-radius: 100%;
+            padding: 21px;
+            img {
+                border-radius: 100%;
+                box-shadow: 15px 48px 42px 0px rgba($gray, $alpha);
+            }
         }
     }
 }
